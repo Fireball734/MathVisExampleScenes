@@ -1,0 +1,1 @@
+As far as I know, running this with manim community installed does create the animation when run off of a text editor and command prompt. Outside of that, PyCharm does not seem as compliant. My guess is that there is something happening on Manim's side where it doesn't know where to put the video, so it just doesn't create it at all.
