@@ -6,30 +6,30 @@ The list of things that need to be done are as follows:
 3.  Add Trey to Public Project Dashboard
 4.  VSCode integration with Github test with changes to the README file and push to a branch not main
 
-    [x] Install VSCode
+    1.  Install VSCode
 
-    [x] Install Python plugin to run python code
+    2.  Install Python plugin to run python code
 
-    [x] Create Github issue for this task
+    3.  Create Github issue for this task
 
-    [x] Create associate Branch
+    4.  Create associate Branch
 
-    [x] Sync that branch locally
+    5.  Sync that branch locally
 
-    [x] Check out that issue branch
+    6.  Check out that issue branch
 
-    [X] Make formatted changes to [the README](https://github.com/skills/communicate-using-markdown)
+    7.  Make formatted changes to [the README](https://github.com/skills/communicate-using-markdown)
 
-    [ ] Commit your changes with a descriptive message
+    8.  Commit your changes with a descriptive message
 
-    [ ] Push changes to github
+    9.  Push changes to github
 
-    [ ] Open a [merge request](https://github.com/skills/
+    10. Open a [merge request](https://github.com/skills/
     review-pull-requests) in Github
 
-    [ ] Have it reviewed by Trey
-    
-    [ ] merge changes to main
+    11. Have it reviewed by Trey
+
+    12. merge changes to main
 5.  Repeat this process for manim example #1 to make a video
 6.  Repeat this process for manim examples 2-4
 7.  Repeat this process for the maim fft video
