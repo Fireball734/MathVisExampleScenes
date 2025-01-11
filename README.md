@@ -24,8 +24,7 @@ The list of things that need to be done are as follows:
 
     9.  Push changes to github
 
-    10. Open a [merge request](https://github.com/skills/
-    review-pull-requests) in Github
+    10. Open a [merge request](https://github.com/skills/review-pull-requests) in Github
 
     11. Have it reviewed by Trey
 
