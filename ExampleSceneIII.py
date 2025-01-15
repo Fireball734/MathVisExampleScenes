@@ -16,7 +16,7 @@ class TextExample(Scene):
         )
         VGroup(text, difference).arrange(DOWN, buff=1)
         self.play(Write(text))
-        self.play(FadeIn(difference, UP))
+        self.play(FadeIn(difference, shift=UP))
         self.wait(3)
 
         fonts = Text(
