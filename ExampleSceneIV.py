@@ -76,13 +76,10 @@ class TexTransformExample(Scene):
         # new_line2 and the "\sqrt" from the final line.  By passing in,
         # transform_mismatches=True, it will transform this "^2" part into
         # the "\sqrt" part.
-        new_line2 = OldTex("A^2 = (C + B)(C - B)", isolate=["A", *to_isolate])
-        new_line2.replace(lines[2])
-        new_line2.match_style(lines[2])
 
         self.play(
             TransformMatchingTex(
-                new_line2, lines[3],
+                lines[2], lines[3],
                 transform_mismatches=True,
             ),
             **play_kw
