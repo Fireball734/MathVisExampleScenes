@@ -77,6 +77,7 @@ class TexTransformExample(Scene):
         # transform_mismatches=True, it will transform this "^2" part into
         # the "\sqrt" part.
 
+
         self.play(
             TransformMatchingTex(
                 lines[2], lines[3],
@@ -85,7 +86,7 @@ class TexTransformExample(Scene):
             **play_kw
         )
         self.wait(3)
-        self.play(FadeOut(lines, RIGHT))
+        self.play(FadeOut(*lines, shift=RIGHT))  # Unpack the VGroup and apply shift to each Mobject
 
         # Alternatively, if you don't want to think about breaking up
         # the tex strings deliberately, you can TransformMatchingShapes,
