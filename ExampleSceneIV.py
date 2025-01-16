@@ -15,13 +15,9 @@ class TexTransformExample(Scene):
             MathTex("A^2", "+", "B^2", "=", "C^2"),
             # Likewise here
             MathTex("A^2", "=", "C^2", "-", "B^2"),
-            # Alternatively, you can pass in the keyword argument
-            # "isolate" with a list of strings that should be out as
-            # their own submobject.  So the line below is equivalent
-            # to the commented out line below it.
-            MathTex("A^2 = (C + B)(C - B)", isolate=["A^2", *to_isolate]),
-            # OldTex("A^2", "=", "(", "C", "+", "B", ")", "(", "C", "-", "B", ")"),
-            MathTex("A = \\sqrt{(C + B)(C - B)}", isolate=["A", *to_isolate])
+            # Replaced 'isolate' argument with manual separation of components.
+            MathTex("A^2", "=", "(", "C", "+", "B", ")", "(", "C", "-", "B", ")"),
+            MathTex("A", "=", "\\sqrt{(", "C", "+", "B", ")(", "C", "-", "B", ")}")
         )
         lines.arrange(DOWN, buff=LARGE_BUFF)
         for line in lines:
