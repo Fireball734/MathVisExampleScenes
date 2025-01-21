@@ -32,3 +32,4 @@ class BooleanOperations(Scene):
         self.play(d.animate.scale(0.3).next_to(u, LEFT, buff=difference_text.height * 3.5))
         difference_text.next_to(d, UP)
         self.play(FadeIn(difference_text))
+        self.wait()
