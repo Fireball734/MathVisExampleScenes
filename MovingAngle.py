@@ -45,11 +45,12 @@ class MovingAngle(Scene):
                 ).point_from_proportion(0.5)
             )
         )
-        #create the initial angle at 40 degrees
-        self.play(theta_tracker.animate.set_value(40))
-        #increase the angle by 140 degrees
-        self.play(theta_tracker.animate.increment_value(140))
+        #create the initial angle at 50 degrees
+        self.play(theta_tracker.animate.set_value(50))
+        #increase the angle by 125 degrees
+        self.play(theta_tracker.animate.increment_value(125))
         #change the color of theta to red in 0.5 seconds
         self.play(tex.animate.set_color(RED), run_time=0.5)
-        #change the angle to precisely 350 degrees
-        self.play(theta_tracker.animate.set_value(350))
+        #change the angle to precisely 279 degrees
+        self.play(theta_tracker.animate.set_value(279))
+        self.wait()
