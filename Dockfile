@@ -1,0 +1,13 @@
+#Use Lightweight Alpine Linux Image as the base image
+FROM alpine:latest
+
+#Copy shell script into image's root directory
+COPY run.sh /run.sh
+
+#Make the script executable
+RUN chmod +x /run.sh
+
+#Set the default command to run when the container starts
+CMD ["/run.sh"]
+
+
