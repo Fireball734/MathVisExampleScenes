@@ -1,13 +1,29 @@
 #Use Lightweight Alpine Linux Image as the base image
 FROM alpine:latest
 
+
+
 #Copy shell script into image's root directory
 COPY run.sh /run.sh
 
 #Make the script executable
 RUN chmod +x /run.sh
 
-#Set the default command to run when the container starts
-CMD ["/run.sh"]
+
+FROM python:3.9-slim
+
+# Install poetry
+RUN pip install poetry
+
+# Copy your project files
+WORKDIR /app
+COPY pyproject.toml poetry.lock ./
+COPY . .
+
+# Install dependencies using poetry
+RUN poetry install --no-interaction --no-root
+
+# Execute your shell script
+CMD ["/bin/bash", "run.sh"]
 
 
